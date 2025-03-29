@@ -11,8 +11,8 @@ workflows:
         bundle_identifier: com.RelaxInGrossvenor
       vars:
         BUNDLE_ID: com.RelaxInGrossvenor
-        XCODE_WORKSPACE: myApp.xcworkspace
-        XCODE_SCHEME: myApp
+        XCODE_WORKSPACE: testProject.xcworkspace
+        XCODE_SCHEME: testProject
         APP_STORE_APPLE_ID: 6743849998
     scripts:
       - name: Install npm dependencies
