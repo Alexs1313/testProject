@@ -78,10 +78,9 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        style={backgroundStyle}>
+      <ScrollView style={backgroundStyle}>
         <View style={{paddingRight: safePadding}}>
-          <Header/>
+          <Header />
         </View>
         <View
           style={{
@@ -100,7 +99,7 @@ function App(): React.JSX.Element {
             <DebugInstructions />
           </Section>
           <Section title="Learn More">
-            Read the docs to discover what to do next:
+            Read the docs to discover what to do nex:
           </Section>
           <LearnMoreLinks />
         </View>
