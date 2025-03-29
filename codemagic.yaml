@@ -1,19 +1,19 @@
 workflows:
   ios-workflow:
-    name: myNewTestAppTokm
+    name: Relax in Grossvenor
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: myNewTestAppKMAPIkey
+      app_store_connect: RelaxInGrossvenor
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.myNew.AppxxxxxSxt
+        bundle_identifier: com.RelaxInGrossvenor
       vars:
-        BUNDLE_ID: com.myNew.AppxxxxxSxt
-        XCODE_WORKSPACE: testProject.xcworkspace
-        XCODE_SCHEME: testProject
-        APP_STORE_APPLE_ID: 6743957698
+        BUNDLE_ID: com.RelaxInGrossvenor
+        XCODE_WORKSPACE: myApp.xcworkspace
+        XCODE_SCHEME: myApp
+        APP_STORE_APPLE_ID: 6743849998
     scripts:
       - name: Install npm dependencies
         script: |
@@ -43,4 +43,4 @@ workflows:
       app_store_connect:
         auth: integration
         submit_to_app_store: true
-        copyright: myNewTestAppTokm 2025
+        copyright: Relax in Grossvenor 2025
